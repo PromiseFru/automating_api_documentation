@@ -1,0 +1,45 @@
+swagger: "2.0"
+
+info:
+  title: "Personal Library API"
+  version: "1.0"
+  
+host: "localhost:3000"
+basePath: "/api"
+schemes: 
+  - http
+
+tags: 
+  - name: "Books"
+    description: "Everything about books"
+
+paths: 
+  /books:
+    get:
+      summary: "Find all books"
+      tags:
+        - "Books"
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: "Successful"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/books"
+            
+definitions:
+  books: 
+    type: "object"
+    properties: 
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      comments:
+        type: "array"
+        items:
+          type: "string"
+              
+        
