@@ -1,0 +1,28 @@
+{
+  "name": "automating_api_documentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "redoc-cli": "^0.10.2"
+  },
+  "scripts": {
+    "redoc-bundle": "redoc-cli bundle ./spec/api_description.yml --output ./docs/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PromiseFru/automating_api_documentation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PromiseFru/automating_api_documentation/issues"
+  },
+  "homepage": "https://github.com/PromiseFru/automating_api_documentation#readme"
+}
